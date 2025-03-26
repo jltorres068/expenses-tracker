@@ -1,8 +1,6 @@
 package com.jl_torres.expensestracker.presentation.expenseform
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -149,7 +147,7 @@ fun ExpenseFormScreen(
                                 viewModel.onSelectCategory(it)
                                 openDropdown = false
                             }
-                            .padding(2.dp)
+                            .padding(horizontal = 4.dp, vertical = 2.dp)
                     ) {
                         Text(
                             text = it.description

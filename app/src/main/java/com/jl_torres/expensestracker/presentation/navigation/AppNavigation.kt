@@ -12,9 +12,9 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 import com.jl_torres.expensestracker.presentation.dashboard.DashboardScreen
 import com.jl_torres.expensestracker.presentation.expenseform.ExpenseFormScreen
+import com.jl_torres.expensestracker.presentation.table.ExpensesTableScreen
 
 @Composable
 fun AppNavigation(
@@ -31,13 +31,19 @@ fun AppNavigation(
         NavHost(navController, startDestination = "dashboard") {
             composable("dashboard") {
                 DashboardScreen(
-                    onAddExpense = { navController.navigate("expenseform") }
+                    onAddExpense = { navController.navigate("expenseform") },
+                    onDetails = { navController.navigate("table") }
                 )
             }
             composable("expenseform") {
                 ExpenseFormScreen(
                     snackBarState = snackbarHostState,
                     onSuccess = { navController.popBackStack() }
+                )
+            }
+            composable("table") {
+                ExpensesTableScreen(
+                    onBack = { navController.popBackStack() }
                 )
             }
         }

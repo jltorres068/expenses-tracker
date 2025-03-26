@@ -16,12 +16,6 @@ fun ExpenseButton(
 ) {
     Button(
         onClick = { onClick() },
-        colors = ButtonColors(
-            containerColor = MaterialTheme.colorScheme.onTertiaryContainer,
-            contentColor = MaterialTheme.colorScheme.onPrimary,
-            disabledContentColor = MaterialTheme.colorScheme.inverseSurface,
-            disabledContainerColor = MaterialTheme.colorScheme.inverseOnSurface,
-        ),
         modifier = modifier
             .padding(top = 10.dp, end = 10.dp)
     ) {

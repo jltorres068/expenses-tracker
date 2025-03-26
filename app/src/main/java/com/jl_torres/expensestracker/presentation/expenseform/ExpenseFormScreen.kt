@@ -174,12 +174,6 @@ fun ExpenseFormScreen(
             Button(
                 onClick = { viewModel.onCreateExpense() },
                 enabled = allowSave,
-                colors = ButtonColors(
-                    containerColor = MaterialTheme.colorScheme.onTertiaryContainer,
-                    contentColor = MaterialTheme.colorScheme.onPrimary,
-                    disabledContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
-                    disabledContainerColor = MaterialTheme.colorScheme.surfaceVariant,
-                ),
             ) {
                 Text(
                     text = "Save"

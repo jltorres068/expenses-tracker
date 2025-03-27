@@ -17,7 +17,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.Icon
@@ -38,9 +37,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.jl_torres.expensestracker.R
 import com.jl_torres.expensestracker.domain.model.ExpensesCategory
 import com.jl_torres.expensestracker.presentation.util.UiEvent
 
@@ -75,7 +76,7 @@ fun ExpenseFormScreen(
             .background(MaterialTheme.colorScheme.primaryContainer)
     ) {
         Text(
-            text = "Add your expenses quickly and stay on top of your spending with clear insights.",
+            text = stringResource(R.string.expense_form_description),
             textAlign = TextAlign.Center,
             modifier = Modifier
                 .width(300.dp)
@@ -176,7 +177,7 @@ fun ExpenseFormScreen(
                 enabled = allowSave,
             ) {
                 Text(
-                    text = "Save"
+                    text = stringResource(R.string.save)
                 )
             }
         }

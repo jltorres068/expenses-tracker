@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Expenses Tracker</string>
+    <string name="expenses_tracker">Expenses Tracker</string>
+    <string name="add_expense">+ Add Expense</string>
+    <string name="expenses_description">A detailed breakdown of your spending, helping you track and manage your budget.</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="summary">Summary</string>
+    <string name="no_expenses_yet">No expenses found.</string>
+    <string name="color">Color</string>
+    <string name="details">Details</string>
+    <string name="expense_form_description">Add your expenses quickly and stay on top of your spending with clear insights.</string>
+    <string name="save">Save</string>
+    <string name="date">Date</string>
+    <string name="back">Back</string>
+    <string name="expenses_month">Expenses by month:</string>
 </resources>
